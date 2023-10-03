@@ -1,4 +1,4 @@
-import math
+Чипри import math
 
 
 def area(r):
