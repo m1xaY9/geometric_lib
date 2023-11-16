@@ -16,11 +16,11 @@ class TestAreaAndPerimeter(unittest.TestCase):
 
     def test_area_negative(self):
         res = area(-3, -2)
-        self.assertEqual(res, "Сторона не может быть отрицательным числом")
+        self.assertEqual(res, ValueError)
 
     def test_area_string(self):
         res = area("one", "two")
-        self.assertEqual(res, "Сторона не может быть строкой")
+        self.assertEqual(res, ValueError)
     def test_perimeter_zero(self):
         res = perimeter(0, 0)
         self.assertEqual(res, 0)
@@ -33,8 +33,8 @@ class TestAreaAndPerimeter(unittest.TestCase):
 
     def test_perimeter_negative(self):
         res = perimeter(-3, -2)
-        self.assertEqual(res, "Сторона не может быть отрицательным числом")
+        self.assertEqual(res, ValueError)
 
     def test_perimeter_string(self):
         res = perimeter("one", "two")
-        self.assertEqual(res, "Сторона не может быть строкой")
+        self.assertEqual(res, ValueError)

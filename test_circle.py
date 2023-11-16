@@ -38,8 +38,8 @@ class MyTestCase(unittest.TestCase):
 
     def test_perimeter_negative(self):
         res = perimeter(-3)
-        self.assertEqual(res, "Радиус не может быть отрицательным числом")
+        self.assertEqual(res, ValueError)
 
     def test_perimeter_string(self):
         res = perimeter("one")
-        self.assertEqual(res, "Радиус не может быть строкой")
+        self.assertEqual(res, ValueError)
