@@ -34,7 +34,7 @@ class MyTestCase(unittest.TestCase):
         self.assertEqual(res, 123456789000 + 123456789000 + 123456789000)
 
     def test_perimeter_negative(self):
-        self.assertRaises(ValueError, perimetr, (-3, -2, -4))
+        self.assertRaises(ValueError, perimeter, (-3, -2, -4))
 
     def test_perimeter_string(self):
-        self.assertRaises(TypeError, perimetr, ("one", "two", "one"))
+        self.assertRaises(TypeError, perimeter, ("one", "two", "one"))
