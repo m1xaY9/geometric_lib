@@ -20,7 +20,7 @@ class MyTestCase(unittest.TestCase):
         self.assertRaises(ValueError, area, -3)
 
     def test_area_string(self):
-        self.assertRaises(TypeError, area, ("one", "two"))
+        self.assertRaises(TypeError, area, "one", "two")
 
     def test_perimeter_zero(self):
         res = perimeter(0)
