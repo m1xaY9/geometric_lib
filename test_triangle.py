@@ -17,11 +17,11 @@ class MyTestCase(unittest.TestCase):
 
     def test_area_negative(self):
         res = area(-3, -2)
-        self.assertEqual(res, ValueError)
+        self.assertRaises(res, ValueError)
 
     def test_area_string(self):
         res = area("one", "two")
-        self.assertEqual(res, ValueError)
+        self.assertRaises(res, TypeError)
 
     def test_perimeter_zero(self):
         res = perimeter(0, 0, 0)
@@ -37,8 +37,8 @@ class MyTestCase(unittest.TestCase):
 
     def test_perimeter_negative(self):
         res = perimeter(-3, -2, -4)
-        self.assertEqual(res, ValueError)
+        self.assertRaises(res, ValueError)
 
     def test_perimeter_string(self):
         res = perimeter("one", "two", "one")
-        self.assertEqual(res, ValueError)
+        self.assertRaises(res, TypeError)
