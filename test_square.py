@@ -38,4 +38,4 @@ class MyTestCase(unittest.TestCase):
         self.assertRaises(ValueError, perimeter, -3)
 
     def test_area_string(self):
-        self.assertRaises(TypeError, perimater, "one")
+        self.assertRaises(TypeError, perimeter, "one")
